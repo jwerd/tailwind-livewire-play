@@ -1,4 +1,4 @@
-<div class="fixed inset-0 overflow-hidden" x-data="{ open: true }">
+<div class="fixed inset-0 overflow-hidden" x-data="{ openSlideOver: true }">
   <div class="absolute inset-0 overflow-hidden">
     <!--
       Background overlay, show/hide based on slide-over state.
@@ -12,8 +12,8 @@
     -->
     <div 
         class="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
-        x-show="open"
-        @click.away="open = false"
+        x-show="openSlideOver"
+        @click.away="openSlideOver = false"
         x-transition:enter="ease-in-out duration-500"
         x-transition:enter-start="opacity-0"
         x-transition:enter-end="opacity-100"
@@ -35,8 +35,8 @@
       -->
       <div 
         class="relative w-screen max-w-md"
-        x-show="open"
-        @click.away="open = false"
+        x-show="openSlideOver"
+        @click.away="openSlideOver = false"
         x-transition:enter="transform transition ease-in-out duration-500 sm:duration-700"
         x-transition:enter-start="translate-x-full"
         x-transition:enter-end="translate-x-0"
@@ -56,8 +56,8 @@
         -->
         <div 
             class="absolute top-0 left-0 -ml-8 pt-4 pr-2 flex sm:-ml-10 sm:pr-4"
-            x-show="open"
-            @click.away="open = false"
+            x-show="openSlideOver"
+            @click.away="openSlideOver = false"
             x-transition:enter="ease-in-out duration-500"
             x-transition:enter-start="opacity-0"
             x-transition:enter-end="opacity-100"
