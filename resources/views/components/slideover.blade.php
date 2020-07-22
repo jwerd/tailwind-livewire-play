@@ -1,5 +1,5 @@
-<div class="fixed inset-0 overflow-hidden" x-data="{ openSlideOver: true }">
-  <div class="absolute inset-0 overflow-hidden">
+<div class="fixed inset-0 overflow-hidden">
+  <div class="absolute inset-0 overflow-hidden" x-data="{ openSlideOver: true }">
     <!--
       Background overlay, show/hide based on slide-over state.
 
